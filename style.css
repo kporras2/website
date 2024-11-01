@@ -1,44 +1,195 @@
 body {
     font-family: sans-serif;
-    margin: 0; 
+    margin: 0;
+    transition: 0.3s;
 }
 
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+}
+
+.sub-title {
+    color: black;
+    margin-top: 30px;
+    font-size: 5rem;
+    margin-bottom: 1rem;
     text-align: center;
+}
+
+
+header {
+    background-color: #0096FF;
+    padding: 20px;
+    border: solid #0096FF;
+    border-bottom: black solid 5px;
+    text-align: left;
 }
 
 h1 {
     margin-bottom: 5px; 
 }
 
-#about {
+#container {
+    padding: 20px;
+
+}
+
+#container h3{
+    font-size: 2rem;
+}
+
+#container li {
+    line-height: 1.5;
+}
+
+
+#intro {
+    padding: 20px;
+    text-align: center;
+}
+
+.logos {
+    padding: 20px;
+    color: black;
+    text-align: center;
+    font-size: 5rem;
+    transition-duration: 1.3s;
+}
+
+.intro-txt{
+    text-align: center;
+    padding: 20px;
+}
+
+.school{
+    padding: 20px;
+    color: #0096FF;
+}
+
+#photo {
     padding: 20px;
 }
 
 .profile-pic {
-    width: 200px;
+    width: 300px;
     height: auto;
-    border-radius: 50%;
+    border: 10px solid #0096FF;
+    border-radius: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#resume {
-    padding: 20px;
+
+.flex-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all 0.3s ease,background-color 0.3s ease;
+}
+.flex-box {
+    transform: translateZ(0);  /* Force hardware acceleration */
+    -webkit-backface-visibility: hidden; /* For older Chrome/Safari */
+    backface-visibility: hidden;
+    width: 600px;
+    height: auto;
+    background: #0096FF;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 20px;
+    margin: 10px;
+    transition: all 0.3s ease, background-color 0.3s ease;
+    display: flex;        /* Make flex-box a flex container */
+    flex-direction: column; /* Align items vertically */
+    align-items: center;   /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+.flex-box:hover {
+    background: purple;
+    transform: scale(1.05);
+    animation: fade-up 0.5s 0.4s backwards;
+}
+.projects h3 {
+    font-size: 1rem;
+}
+
+.projects li{
+    line-height: 1.5;
+    padding: 30px 30px;
+    border: 10px solid #0096FF;
+    border-block-color: #0096FF;
+
 }
 
 .job {
     margin-bottom: 20px;
 }
 
+.btn{
+    background-color: #0096FF;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5000px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.15);
+}
+.btn-box{
+    background-color: black;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5000px;
+    transition: 0.3s;
+}
+.btn-box:hover{
+    transform: scale(1.15);
+}
+.btn--download{
+    padding: 16px 32px;
+    font-size: 16px;
+    position: fixed;
+    bottom: 27px;
+    left: calc(50% - 90px);
+    z-index: 100;
+    box-shadow: 0 6px 23px rgba(0, 0, 0, 0.45);
+    animation: fade-up 0.5s 0.4s backwards;
+}
+
+.btn--box{
+    padding: 16px 32px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    z-index: 50;
+    box-shadow: 0 6px 23px rgba(255, 255, 255, 0.45);
+    animation: fade-up 0.5s 0.4s backwards;
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 120px;
 }
 
 .social-links li {
@@ -50,6 +201,6 @@ footer {
     }
     
     :visited {
-        color: white;
+        color: #0096FF;
     }
 }

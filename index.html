@@ -5,41 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fc003948e9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Kevin Porras</h1> 
-        <h2>Undergraduate Student at The University of Texas at El Paso.</h2> 
+        <h1>Kevin Porras's Portfolio</h1>
     </header>
 
-    <section id="about">
-        <h3>About Me</h3>
-        <p>Through the many years of High School and College, I have been eager to learn. It may take months or days but I am dedicated to expanding my connections and knowledge through hard work.</p> 
+    <section id="photo">
         <img src="photo.jpg" alt="photo of myself" class="profile-pic">
-        <br>
-        <span>Here is a link to view my <a href="resume.pdf">resume</a>.</span>
     </section>
 
-    <section id="resume">
-        <h3>Experience</h3>
+    <section id ="intro">
+        <h1>Hello, My name is Kevin Porras</h1>
+        <div class = "school">
+            <h1>Undergraduate Student at The University of Texas at El Paso</h1>
+        </div>
+
+        <div class="intro-txt">
+            <p>A driven computer science student interested in finding solutions to problems that cant always be answered.</p>
+        </div>
+    </section>
+
+    <!--suppress XmlDuplicatedId -->
+    <section id="container">
+        <h3><u>About me</u></h3>
+        <p>This is my story</p>
+    </section>
+
+    <!--suppress XmlDuplicatedId -->
+    <section id="container">
+        <h3><u>Education</u></h3>
         <div class="job">
-            <h4>Google Tech Exchange</h4>
+            <h4>The University of Texas at El Paso</h4>
+            <p>Bachelors of Science in Computer Science<br> Expected Graduation Date: May 2026</p>
+            <ul>
+                <li><i class="fa-solid fa-xmark"></i>  Relevant course work: Data Structures, Applied Data Structures, Advanced-Object-Oriented Programming, Theory of Computation/Automata, Computer Architecture, Machine Learning, Decision-Making</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--suppress XmlDuplicatedId -->
+    <section id="container">
+        <div>
+            <h3><u>Technical Skills</u></h3>
+            <div class="logos">
+                <i class="fa-brands fa-java custom-style"></i>
+                <i class="fa-brands fa-python custom-style"></i>
+                <i class="fa-solid fa-c"></i>
+                <i class="fa-brands fa-css3-alt custom-style"></i>
+                <i class="fa-brands fa-html5 custom-style"></i>
+                <i class="fa-brands fa-git custom-style"></i>
+                <i class="fa-brands fa-github custom-style"></i>
+                <i class="fa-brands fa-microsoft custom-style"></i>
+                <i class="fa-brands fa-chrome custom-style"></i>
+            </div>
+        </div>
+    </section>
+
+
+    <!--suppress XmlDuplicatedId -->
+    <section id="container">
+        <h3><u>Experience</u></h3>
+        <div class="job">
+            <h4>Google Tech Exchange   <i class="fa-brands fa-google"></i></h4>
             <p>Google (January 2024-May 2024)</p>
             <ul>
-                <li>describe....</li>
-                <li>describe....</li>
+                <li><i class="fa-solid fa-xmark"></i>  Selected from a pool of +1800 students by a coding OA, to join a cohort of 180+ students across the United States to learn in demand skills from Google Engineers</li>
+                <li><i class="fa-solid fa-xmark"></i>  Developed mastery in data structures and algorithms by applying and optimizing them for real world scenarios</li>
+                <li><i class="fa-solid fa-xmark"></i>  Developed confidence in technical interviews by conducting 6 mock interviews with a Software Engineer from Google</li>
+
             </ul>
         </div>
         <div class="job">
-            <h4>...More experience...</h4>
+            <h4>Undergraduate Teaching Assistant</h4>
+            <p>University of Texas at El Paso (January 2024-Present)</p>
+            <p>Class taught: Elementary Data Structures and Algorithms</p>
+            <ul>
+                <li><i class="fa-solid fa-xmark"></i>  Enhanced student problem-solving abilities in the context of data structures, with students showing increased confidence and proficiency in applying data structures to solve coding challenges, by guiding students through debugging processes, facilitating collaborative problem-solving, and encouraging critical thinking</li>
+                <li><i class="fa-solid fa-xmark"></i>  Gained valuable experience in teaching and mentoring, developing strong communication, leadership, and problem-solving skills through successfully managing a classroom setting, effectively communicating complex information, and providing guidance and support to students.</li>
+            </ul>
         </div>
-        
-        <h3>Projects</h3>
-         <div class="job">
-            <h4>...More projects...</h4>
+
+        <h3><u>Projects</u></h3>
+        <div class="flex-container">
+            <div class="flex-box">
+                <h1><i class="fa-solid fa-barcode"></i> Loaning Tech Equipment</h1>
+                <p>This project was made in my CS1 class, it allows a user to loan out equipment from current stock available under their ID numbers. The system verifies the ID then logs with a specific return date, updates inventory<br></p>
+                <p>Technologies Used: Java | VSCode | GitHub</p>
+                <a href="https://github.com/kporras2/Loaning-Tech-Equiment" class="btn-box btn--box">Check it out Here</a>
+
+            </div>
+            <div class="flex-box">
+                <h1><i class="fa-solid fa-user-astronaut"></i>  2D-Game</h1>
+                <p>In progress, I am making a 2d-game, you will play as an astronaut collecting rocks and finding what is in them to make the world a better place<br></p>
+                <p>Technologies Used: Java | GitHub</p>
+                <a href="https://github.com/kporras2/Loaning-Tech-Equiment" class="btn-box btn--box">Check it out Here</a>
+
+            </div>
+            <div class="flex-box">
+                <h1><i class="fa-solid fa-pen-nib"></i>  Shakespeare-LLM</h1>
+                <p>A multihead attention model made using pytorch that predicts what character should come next. The data fed to this model was shakespeare, so we get a model that learns how to write like shakespeare<br></p>
+                <p>Technologies Used: Python | Pytorch | GitHub | Google Colab</p>
+                <a href="https://github.com/kporras2/Shakespeare-LLM" class="btn-box btn--box">Check it out Here</a>
+            </div>
+
+            <div class="flex-box">
+                <h1><i class="fa-solid fa-money-bill"></i>  Banking-System | Miners Bank <br> By: Kevin and Alex</h1>
+                <p>A banking system that allows current customers of the bank to interact with the account and balances, it also allows bank managers to create statements and check accounts for customers<br></p>
+                <p>Technologies Used: Java | JavaDoc | GitHub</p>
+                <a href="" class="btn-box btn--box">Check it out Here</a>
+            </div>
+
+            <div class="flex-box">
+                <h1><i class="fa-solid fa-newspaper"></i>  Personal Portfolio</h1>
+                <p>The page you are currently look at! Built using github pages and a custom domain, I get to show you what I am working on and my interest.<br></p>
+                <p>Technologies Used: HTML | CSS | GitHub </p>
+                <a href="https://github.com/kporras2/website" class="btn-box btn--box">Check it out Here</a>
+            </div>
         </div>
     </section>
 
+
+    <!--Button to download resume-->
+    <a href="resume.pdf" class="btn btn--download">Download <span class = "u-bolder">CV</span></a>
+
+    <!--Bottom foooter that has social link and copyright, to add a contact me section-->
     <footer>
         <p>&copy; 2024 Kevin Porras</p>
         <ul class="social-links">
@@ -47,5 +138,6 @@
             <li><a href="https://github.com/kporras2">GitHub</a></li>
         </ul>
     </footer>
+
 </body>
 </html>
