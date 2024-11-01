@@ -1,26 +1,71 @@
 body {
     font-family: sans-serif;
-    margin: 0; 
+    margin: 0;
+    transition: 0.3s;
 }
 
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+}
+
+.sub-title {
+    color: black;
+    margin-top: 30px;
+    font-size: 5rem;
+    margin-bottom: 1rem;
     text-align: center;
+}
+
+
+header {
+    background-color: #0096FF;
+    padding: 20px;
+    border: solid #0096FF;
+    border-bottom: black solid 5px;
+    text-align: left;
 }
 
 h1 {
     margin-bottom: 5px; 
 }
 
-#about {
+#skills {
+    padding: 20px;
+}
+
+#intro {
+    padding: 20px;
+    text-align: center;
+}
+
+.logos {
+    padding: 20px;
+    border: solid #0096FF;
+    border-radius: 50%;
+    text-effect: engrave;
+    transition-duration: 0.3s;
+}
+
+.intro-txt{
+    text-align: left;
+    padding: 20px;
+}
+
+#photo {
     padding: 20px;
 }
 
 .profile-pic {
-    width: 200px;
+    width: 300px;
     height: auto;
-    border-radius: 50%;
+    border: 10px solid #0096FF;
+    border-radius: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -30,15 +75,47 @@ h1 {
     padding: 20px;
 }
 
+#education {
+    padding: 20px;
+}
+
+
 .job {
     margin-bottom: 20px;
+}
+
+.btn{
+    background-color: #0096FF;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5000px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.15);
+}
+
+.btn--download{
+    padding: 16px 32px;
+    font-size: 16px;
+    position: fixed;
+    bottom: 27px;
+    left: calc(50% - 90px);
+    z-index: 100;
+    box-shadow: 0 6px 23px rgba(0, 0, 0, 0.45);
+    animation: fade-up 0.5s 0.4s backwards;
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 120px;
 }
 
 .social-links li {
