@@ -1,3 +1,6 @@
+
+/* General styling*/
+
 body {
     font-family: sans-serif;
     margin: 0;
@@ -14,6 +17,7 @@ a {
     font-size: 1rem;
 }
 
+/*Bigger sub section styling*/
 .sub-title {
     color: black;
     margin-top: 30px;
@@ -36,9 +40,10 @@ h1 {
 }
 
 #container {
-    padding: 20px;
+    padding: 15px;
 
 }
+
 
 #container h3{
     font-size: 2rem;
@@ -54,6 +59,11 @@ h1 {
     text-align: center;
 }
 
+#photo {
+    padding: 20px;
+}
+
+/*Smaller section styling*/
 .logos {
     padding: 20px;
     color: black;
@@ -67,14 +77,18 @@ h1 {
     padding: 20px;
 }
 
+.about-me{
+    text-align: left;
+    padding: 5px;
+    line-height: 1.5;
+
+}
+
 .school{
     padding: 20px;
     color: #0096FF;
 }
 
-#photo {
-    padding: 20px;
-}
 
 .profile-pic {
     width: 300px;
@@ -86,7 +100,31 @@ h1 {
     margin-right: auto;
 }
 
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 120px;
+}
 
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+
+    a {
+        color: white;
+    }
+
+    :visited {
+        color: #0096FF;
+    }
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+/*Project container and boxes*/
 .flex-container {
     width: 100%;
     height: auto;
@@ -96,6 +134,7 @@ h1 {
     justify-content: center;
     transition: all 0.3s ease,background-color 0.3s ease;
 }
+
 .flex-box {
     transform: translateZ(0);  /* Force hardware acceleration */
     -webkit-backface-visibility: hidden; /* For older Chrome/Safari */
@@ -121,10 +160,8 @@ h1 {
     animation: fade-up 0.5s 0.4s backwards;
 }
 
-.job {
-    margin-bottom: 20px;
-}
 
+/* Buttons for project links and CV download*/
 .btn{
     background-color: #0096FF;
     font-size: 12px;
@@ -174,22 +211,4 @@ h1 {
     animation: fade-up 0.5s 0.4s backwards;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 120px;
-}
 
-.social-links li {
-    display: inline;
-    margin: 0 10px;
-
-    a {
-        color: white;
-    }
-    
-    :visited {
-        color: #0096FF;
-    }
-}
