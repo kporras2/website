@@ -28,7 +28,7 @@
         </div>
 
         <div class="intro-txt">
-            <h3>A driven computer science student interested in finding solutions to problems that cant always be answered.</h3>
+            <h3>A driven computer science student interested in finding solutions to problems that can't always be answered.</h3>
         </div>
     </section>
 
@@ -151,11 +151,30 @@
 
     <!--Bottom foooter that has social link and copyright, to add a contact me section-->
     <footer>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in touch</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="21302882-a837-4485-9d15-cb2cb54627b3">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
+            </form>
+
+            <div class="contact-right">
+                <img src="assets/paper_airplane.png" alt="">
+            </div>
+        </div>
         <p>&copy; 2024 Kevin Porras</p>
-        <ul class="social-links">
-            <li><a href="https://www.linkedin.com/in/kevin-porras/">LinkedIn</a></li>
-            <li><a href="https://github.com/kporras2">GitHub</a></li>
-        </ul>
+        <div>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/kevin-porras/">LinkedIn</a></li>
+                <li><a href="https://github.com/kporras2">GitHub</a></li>
+            </ul>
+        </div>
     </footer>
 
 </body>
