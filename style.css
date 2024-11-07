@@ -9,12 +9,21 @@ body {
 
 li {
     list-style: none;
+    line-height: 1.5;
 }
 
 a {
     text-decoration: none;
     color: inherit;
     font-size: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /*Bigger sub section styling*/
@@ -28,23 +37,110 @@ a {
 
 
 header {
-    background-color: #0096FF;
-    padding: 20px;
-    border: solid #0096FF;
-    border-bottom: black solid 5px;
-    text-align: left;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
 }
 
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background: #000;
+}
+
+header.sticky .title,
+header.sticky ul li a{
+    color: #fff;
+}
+header .title {
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 5px 100px;
+    }
+
+    header ul {
+        flex-direction: row; /* Arrange items in a row */
+        flex-wrap: wrap;     /* Allow wrapping if needed */
+        justify-content: center; /* Center the items */
+        margin-top: 10px;
+    }
+
+    header ul li {
+        margin: 5px;  /* Adjust margin as needed */
+        line-height: 1.2;
+    }
+
+    header .title {
+        display: none;
+    }
+}
 h1 {
     margin-bottom: 5px; 
 }
 
-#container {
-    padding: 15px;
-
+#about, #skills, #experience, #contact {
+    scroll-margin-top: 60px;
 }
 
+#about{
+    padding: 15px;
+}
 
+#education{
+    padding: 15px;
+}
+
+#skills{
+    padding: 15px;
+}
+
+#experience{
+    padding: 15px;
+}
+
+#contact{
+
+}
 #container h3{
     font-size: 2rem;
 }
@@ -60,7 +156,7 @@ h1 {
 }
 
 #photo {
-    padding: 20px;
+    padding-top: 130px;
 }
 
 /*Smaller section styling*/
@@ -207,7 +303,6 @@ footer {
     margin-bottom: 20px;
     font-size: 16px;
     z-index: 50;
-    box-shadow: 0 6px 23px rgba(255, 255, 255, 0.45);
     animation: fade-up 0.5s 0.4s backwards;
 }
 
@@ -258,7 +353,7 @@ footer {
 }
 
 .contact-inputs:focus{
-    border: 2px solid #0096FF;
+    border: 4px solid #0096FF;
 }
 
 .contact-inputs::placeholder{
@@ -275,7 +370,7 @@ footer {
     gap: 10px;
     border: none;
     border-radius: 50px;
-    background: linear-gradient(270deg, #0096FF, purple);
+    background: #0096FF;
 }
 
 .contact-left button img{

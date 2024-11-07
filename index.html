@@ -10,7 +10,14 @@
 <body>
 
     <header>
-        <h1>Kevin Porras's Portfolio</h1>
+        <a href="#" class="title">Kevin Porras</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </header>
 
     <!--Profile Picture-->
@@ -20,7 +27,6 @@
 
 
     <!--Intro with name, university-->
-
     <section id ="intro">
         <h1>Hello, My name is Kevin Porras</h1>
         <div class = "school">
@@ -28,14 +34,12 @@
         </div>
 
         <div class="intro-txt">
-            <h3>A driven computer science student interested in finding solutions to problems that can't always be answered.</h3>
+            <h2>A driven computer science student interested in finding solutions to problems that can't always be answered.</h2>
         </div>
     </section>
 
     <!--About me section-->
-
-    <!--suppress XmlDuplicatedId -->
-    <section id="container">
+    <section id="about">
         <h3><u>About me</u></h3>
         <div class="about-me">
             <p>My lifelong fascination with technology stems from a childhood curiosity for taking things apart, though computers always remained a captivating mystery.
@@ -48,9 +52,7 @@
     </section>
 
     <!--Education section-->
-
-    <!--suppress XmlDuplicatedId -->
-    <section id="container">
+    <section id="education">
         <h3><u>Education</u></h3>
         <div class="job">
             <h4>The University of Texas at El Paso</h4>
@@ -62,8 +64,7 @@
     </section>
 
     <!--Technical skills logos-->
-    <!--suppress XmlDuplicatedId -->
-    <section id="container">
+    <section id="skills">
         <div>
             <h3><u>Technical Skills</u></h3>
             <div class="logos">
@@ -81,8 +82,7 @@
     </section>
 
     <!--Jobs, Experience and Projects -->
-    <!--suppress XmlDuplicatedId -->
-    <section id="container">
+    <section id="experience">
         <h3><u>Experience</u></h3>
         <div class="job">
             <h4>Google Tech Exchange   <i class="fa-brands fa-google"></i></h4>
@@ -150,38 +150,47 @@
     <a href="resume.pdf" class="btn btn--download">Download <span class = "u-bolder">CV</span></a>
 
     <!--Bottom foooter that has social link and copyright, to add a contact me section-->
-    <footer>
-        <div class="contact-container">
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-                <div class="contact-left-title">
-                    <h2>Get in touch</h2>
-                    <hr>
+    <section id="contact">
+        <footer>
+            <div class="contact-container">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>Get in touch</h2>
+                        <hr>
+                    </div>
+                    <input type="hidden" name="access_key" value="21302882-a837-4485-9d15-cb2cb54627b3">
+                    <label>
+                        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    </label>
+                    <label>
+                        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                    </label>
+                    <label>
+                        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    </label>
+                    <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
+                </form>
+
+                <div class="contact-right">
+                    <img src="assets/paper_airplane.png" alt="">
                 </div>
-                <input type="hidden" name="access_key" value="21302882-a837-4485-9d15-cb2cb54627b3">
-                <label>
-                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-                </label>
-                <label>
-                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-                </label>
-                <label>
-                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-                </label>
-                <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
-            </form>
-
-            <div class="contact-right">
-                <img src="assets/paper_airplane.png" alt="">
             </div>
-        </div>
-        <p>&copy; 2024 Kevin Porras</p>
-        <div>
-            <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/kevin-porras/">LinkedIn</a></li>
-                <li><a href="https://github.com/kporras2">GitHub</a></li>
-            </ul>
-        </div>
-    </footer>
+            <p>&copy; 2024 Kevin Porras</p>
+            <div>
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/kevin-porras/">LinkedIn</a></li>
+                    <li><a href="https://github.com/kporras2">GitHub</a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
 
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+
+        })
+    </script>
 </body>
 </html>
