@@ -38,7 +38,7 @@ html {
 
 header {
     box-sizing: border-box;
-    position: fixed ;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -73,7 +73,7 @@ header ul li a {
 }
 
 header.sticky{
-    padding: 5px 40px;
+    padding: 5px 100px;
     background: #000;
 }
 
@@ -92,12 +92,11 @@ header .title {
     transition: 0.6s;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
-        padding: 5px 40px;
+        padding: 5px 100px;
     }
-
 
     header ul {
         flex-direction: row; /* Arrange items in a row */
@@ -157,7 +156,7 @@ h1 {
 }
 
 #photo {
-    padding-top: 140px;
+    padding-top: 130px;
 }
 
 /*Smaller section styling*/
@@ -204,30 +203,21 @@ footer {
     padding: 50px 75px 100px 75px; ;
 }
 
-footer p{
-    text-align: center;
+
+.social-links li {
+    display: inline;
+
+    a {
+        color: white;
+    }
+
+    :visited {
+        color: #0096FF;
+    }
 }
 
 .job {
     margin-bottom: 20px;
-}
-
-/* Social links and properties*/
-.social-links{
-    padding: 20px;
-    margin-bottom: 5px;
-}
-.social-links a{
-    font-size: 3rem;
-    color: #0096FF;
-    transition: all 0.3s ease, background-color 0.3s ease;
-}
-.social-links li {
-    display: inline;
-    margin-right: 20px;
-}
-.social-links a:hover {
-    color: #fff;
 }
 
 /*Project container and boxes*/
@@ -261,7 +251,7 @@ footer p{
 }
 
 .flex-box:hover {
-    background: darkorchid;
+    background: purple;
     transform: scale(1.05);
     animation: fade-up 0.5s 0.4s backwards;
 }
@@ -298,7 +288,7 @@ footer p{
     transform: scale(1.15);
 }
 .btn--download{
-    padding: 10px 20px;
+    padding: 16px 32px;
     font-size: 16px;
     position: fixed;
     bottom: 27px;
@@ -309,7 +299,7 @@ footer p{
 }
 
 .btn--box{
-    padding: 8px 16px;
+    padding: 16px 32px;
     margin-bottom: 20px;
     font-size: 16px;
     z-index: 50;
@@ -393,17 +383,10 @@ footer p{
 
 @media(max-width: 800px){
     .contact-inputs{
-        width: 50vw;
+        width: 80vw;
     }
     .contact-right{
         display: none;
     }
 }
-
-@media(max-width: 800px){
-    #about, #skills, #experience, #contact {
-        scroll-margin-top: 90px;
-    }
-}
-
 
