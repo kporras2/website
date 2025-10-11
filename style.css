@@ -119,9 +119,7 @@ h1 {
     margin-bottom: 5px; 
 }
 
-#about, #skills, #experience{
-    scroll-margin-top: 60px;
-}
+#about, #skills, #experience, #projects
 
 #contact{
     scroll-margin-top: 50px;
@@ -142,6 +140,11 @@ h1 {
 #experience{
     padding: 15px;
 }
+
+#projects{
+    padding: 15px;
+}
+
 
 #intro {
     padding: 20px;
@@ -268,6 +271,76 @@ footer p{
     animation: fade-up 0.5s 0.4s backwards;
 }
 
+.tag-list{
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+}
+
+.tag-list li{
+    padding: 2.5rem;
+    font-size: 3rem;
+    background: #0096FF;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem -0.25rem #333;
+}
+
+.scroller{
+    max-width: 1400px;
+
+}
+
+.scroller__inner{
+    padding-block: 1rem;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 1rem;
+
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    mask: linear-gradient(
+            90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent
+    );
+}
+
+.scroller[data-animated="true"] .scroller__inner{
+    width: max-content;
+    flex-wrap: nowrap;
+    animation:
+            scroll
+            var(--_animation-duration, 40s)
+            var(--_animation-direction, forwards)
+            linear
+            infinite;
+}
+
+.scroller[data-direction="right"]  {
+    --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"]  {
+    --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"]  {
+    --_animation-duration: 30s;
+}
+
+.scroller[data-speed="slow"]  {
+    --_animation-duration: 120s;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
 
 /* Buttons for project links and CV download*/
 .btn{
@@ -403,7 +476,7 @@ footer p{
 }
 
 @media(max-width: 800px){
-    #about, #skills, #experience, #contact {
+    #about, #skills, #experience, #contact, #projects {
         scroll-margin-top: 90px;
     }
 }

@@ -62,27 +62,31 @@
             </ul>
         </div>
     </section>
-
+    <div class="divider"></div>
     <!--Technical skills logos-->
     <section id="skills">
-        <div>
-            <h3><u>Technical Skills</u></h3>
-            <div class="logos">
-                <i class="fa-brands fa-java custom-style"></i>
-                <i class="fa-brands fa-python custom-style"></i>
-                <i class="fa-solid fa-c"></i>
-                <i class="fa-brands fa-css3-alt custom-style"></i>
-                <i class="fa-brands fa-html5 custom-style"></i>
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-git custom-style"></i>
-                <i class="fa-brands fa-github custom-style"></i>
-            </div>
+        <h3><u>Technical Skills</u></h3>
+        <div class="scroller" data-speed = "fast">
+            <ul class="tag-list scroller__inner">
+                <li class="fa-brands fa-java custom-style"></li>
+                <li class="fa-brands fa-python custom-style"></li>
+                <li class="fa-solid fa-c"></li>
+                <li class="fa-brands fa-php"></li>
+                <li class="fa-brands fa-react"></li>
+                <li class="fa-brands fa-css3-alt custom-style"></li>
+                <li class="fa-brands fa-html5 custom-style"></li>
+                <li class="fa-brands fa-js"></li>
+                <li class="fa-brands fa-git custom-style"></li>
+                <li class="fa-brands fa-github custom-style"></li>
+            </ul>
         </div>
     </section>
+    <div class="divider"></div>
 
     <!--Jobs, Experience and Projects -->
     <section id="experience">
         <h3><u>Experience</u></h3>
+
         <div class="job">
             <h4>Software Engineer Intern   <i class="fa-brands fa-cc-visa"></i></h4>
             <p>Visa (May 2025-August 2025)</p>
@@ -93,16 +97,7 @@
 
             </ul>
         </div>
-        <div class="job">
-            <h4>Google Tech Exchange   <i class="fa-brands fa-google"></i></h4>
-            <p>Google (January 2024-May 2024)</p>
-            <ul>
-                <li><i class="fa-solid fa-circle"></i>  Selected from a pool of +1800 students by a coding OA, to join a cohort of 180+ students across the United States to learn in demand skills from Google Engineers</li>
-                <li><i class="fa-solid fa-circle"></i>  Developed mastery in data structures and algorithms by applying and optimizing them for real world scenarios</li>
-                <li><i class="fa-solid fa-circle"></i>  Developed confidence in technical interviews by conducting 6 mock interviews with a Software Engineer from Google</li>
 
-            </ul>
-        </div>
         <div class="job">
             <h4>Undergraduate Teaching Assistant</h4>
             <p>University of Texas at El Paso (January 2024-May 2025)</p>
@@ -113,10 +108,55 @@
             </ul>
         </div>
 
+        <div class="job">
+            <h4>Google Tech Exchange   <i class="fa-brands fa-google"></i></h4>
+            <p>Google (January 2024-May 2024)</p>
+            <ul>
+                <li><i class="fa-solid fa-circle"></i>  Selected from a pool of +1800 students by a coding OA, to join a cohort of 180+ students across the United States to learn in demand skills from Google Engineers</li>
+                <li><i class="fa-solid fa-circle"></i>  Developed mastery in data structures and algorithms by applying and optimizing them for real world scenarios</li>
+                <li><i class="fa-solid fa-circle"></i>  Developed confidence in technical interviews by conducting 6 mock interviews with a Software Engineer from Google</li>
 
+            </ul>
+        </div>
+
+    </section>
+
+    <div class="divider"></div>
+    <section id="projects">
         <!--Projects section-->
         <h3><u>Projects</u></h3>
+
         <div class="flex-container">
+
+            <div class="flex-box">
+                <h1><i class="fa-solid fa-paintbrush"></i>  Distributed AI Art Generator</h1>
+                <p>A scalable distributed system for generating AI art using FastAPI, Redis, and Kubernetes.<br></p>
+                <p>Technologies Used: Python | FastAPI | Redis | Docker | Kubernetes | React | JavaScript | Node.js | GitHub </p>
+                <a href="https://github.com/kporras2/distributed-ai-art-generator" class="btn-box btn--box">Check it out Here</a>
+            </div>
+
+            <div class="flex-box">
+                <h1><i class="fa-solid fa-music"></i> Spotify Playlist Generation using Machine Learning</h1>
+                <p>An ML-based project that generates playlists by combining Spotify audio features and lyrics clustering.<br></p>
+                <p>Technologies Used: Python | TensorFlow/Keras | Scikit-learn | Pandas | NumPy | Matplotlib | Google Colab </p>
+                <a href="https://github.com/kporras2/AI-Playlist-Generation" class="btn-box btn--box">Check it out Here</a>
+            </div>
+
+            <div class="flex-box">
+                <h1><i class="fa-solid fa-money-bill"></i>  Banking-System | Miners Bank</h1>
+                <p>A banking system that allows current customers of the bank to interact with the account and balances, it also allows bank managers to create statements and check accounts for customers<br></p>
+                <p>Technologies Used: Java | JavaDoc | GitHub</p>
+                <a href="https://github.com/kporras2/Miners-Bank" class="btn-box btn--box">Check it out Here</a>
+            </div>
+
+            <div class="flex-box">
+                <h1><i class="fa-solid fa-stethoscope"></i> AI Medical Assistant – Diagnosis Prediction</h1>
+                <p>An AI-powered system that predicts diseases from patient symptoms using Random Forest and Bayesian reasoning for interpretable medical decision-making.<br></p>
+                <p>Technologies Used: Python | Scikit-learn | PGMPY | Pandas | NumPy | Matplotlib | Seaborn | Jupyter Notebook</p>
+                <a href="https://github.com/kporras2/AI-Medical-Assistant" class="btn-box btn--box">Check it out Here</a>
+            </div>
+
+
             <div class="flex-box">
                 <h1><i class="fa-solid fa-barcode"></i> Loaning Tech Equipment</h1>
                 <p>This project was made in my CS1 class, it allows a user to loan out equipment from current stock available under their ID numbers. The system verifies the ID then logs with a specific return date, updates inventory<br></p>
@@ -139,13 +179,6 @@
             </div>
 
             <div class="flex-box">
-                <h1><i class="fa-solid fa-money-bill"></i>  Banking-System | Miners Bank <br> By: Kevin and Alex</h1>
-                <p>A banking system that allows current customers of the bank to interact with the account and balances, it also allows bank managers to create statements and check accounts for customers<br></p>
-                <p>Technologies Used: Java | JavaDoc | GitHub</p>
-                <a href="https://github.com/kporras2/Miners-Bank" class="btn-box btn--box">Check it out Here</a>
-            </div>
-
-            <div class="flex-box">
                 <h1><i class="fa-solid fa-newspaper"></i>  Personal Portfolio</h1>
                 <p>The page you are currently look at! Built using github pages and a custom domain, I get to show you what I am working on and my interest.<br></p>
                 <p>Technologies Used: HTML | CSS | GitHub </p>
@@ -157,20 +190,6 @@
                 <p>A toy that plays songs and displays images on a memory mapped LCD.<br></p>
                 <p>Technologies Used: C | Assembly Code for T.I. Architecture | GitHub </p>
                 <a href="https://github.com/kporras2/MSP430-Blinky-Buzzy" class="btn-box btn--box">Check it out Here</a>
-            </div>
-
-            <div class="flex-box">
-                <h1><i class="fa-solid fa-paintbrush"></i>  Distributed AI Art Generator</h1>
-                <p>A scalable distributed system for generating AI art using FastAPI, Redis, and Kubernetes.<br></p>
-                <p>Technologies Used: Python | FastAPI | Redis | Docker | Kubernetes | React | JavaScript | Node.js | GitHub </p>
-                <a href="https://github.com/kporras2/distributed-ai-art-generator" class="btn-box btn--box">Check it out Here</a>
-            </div>
-
-            <div class="flex-box">
-                <h1><i class="fa-solid fa-music"></i> Spotify Playlist Generation using Machine Learning</h1>
-                <p>An ML-based project that generates playlists by combining Spotify audio features and lyrics clustering.<br></p>
-                <p>Technologies Used: Python | TensorFlow/Keras | Scikit-learn | Pandas | NumPy | Matplotlib | Google Colab </p>
-                <a href="https://github.com/kporras2/AI-Playlist-Generation" class="btn-box btn--box">Check it out Here</a>
             </div>
 
         </div>
